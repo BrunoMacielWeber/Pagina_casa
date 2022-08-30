@@ -62,13 +62,13 @@ figure.imagemPrincipal img {
     font-weight: 700;
     margin: 3% auto 3%;
     border-radius: 30px;
-    width: 500px;
+    width: 95%;
+    align-items: center;
 }
 .icone {
     height: 40px;
     position: absolute;
-    padding-right: 25%;
-    margin-top: -1%;
+    padding-right: 70%;
 }
 /* EFEITOS DO BOTÃO */
 .btn:hover,
