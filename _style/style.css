@@ -12,7 +12,7 @@ body {
   height: 100%;
   font-family: sans-serif;
   font-weight: bold;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../_img/teste3.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../_img/nos.png");
   background-position: center;
   background-size: cover;
 }
