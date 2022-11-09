@@ -16,28 +16,33 @@
     </figure>
 
     <div class="botoes">
-        <form action="https://sites.wedy.com/brunoeclaudia/registry/lista-de-casamento">
-            <button class="btn efeito"><i class="fa-solid fa-gift icone"></i>Lista de presentes - site</button>
-        </form>
-        <form action="https://nubank.com.br/pagar/5qlk6/g2ZO0zrtCG">
-            <button class="btn efeito"><i class="fa-brands fa-pix icone"></i></i>Lista de presentes - pix</button>
-        </form>
-        <form action="https://wa.me/5551981216698?text=Ola+Grazi+Gostaria+de+confirmar+a+minha+presença+no+casamento+da+Claudia+e+Bruno">
-            <button class="btn efeito"><i class="fa-solid fa-calendar-check icone"></i>Confirmar presença</button>
-        </form>
-        <form action="https://sites.wedy.com/brunoeclaudia/casamento">
-            <button class="btn efeito"><i class="fa-solid fa-location-dot icone"></i>Como chegar</button>
-        </form>
-        <form action="https://sites.wedy.com/brunoeclaudia/mural-de-recados">
-            <button class="btn efeito"><i class="fa-solid fa-face-smile icone"></i>Deixe um recado pra nós</button>
-        </form>
+        <button onclick="redirectListaPresentes()" class="btn efeito"><i class="fa-solid fa-gift icone"></i>Lista de presentes - site</button>
+        <button onclick="redirectPix()" class="btn efeito"><i class="fa-brands fa-pix icone"></i></i>Lista de presentes - pix</button>
+        <button onclick="redirectConfirmarPresenca()" class="btn efeito"><i class="fa-solid fa-calendar-check icone"></i>Confirmar presença</button>
+        <button onclick="redirectComoChegar()" class="btn efeito"><i class="fa-solid fa-location-dot icone"></i>Como chegar</button>
+        <button onclick="redirectDeixarRecado()" class="btn efeito"><i class="fa-solid fa-face-smile icone"></i>Deixe um recado</button>
     </div>
 
-    <footer id="rodape">
+    <!-- <footer id="rodape">
         <p>by Bruno Weber<br></p>
-    </footer>
+    </footer> -->
 </body>
-
 </html>
-<script src="_script/script.js"></script>
+<script>
+    function redirectListaPresentes() {
+      window.location.href = "https://sites.wedy.com/brunoeclaudia/registry/lista-de-casamento";
+    }
+    function redirectPix() {
+      window.location.href = "https://nubank.com.br/pagar/5qlk6/g2ZO0zrtCG";
+    }
+    function redirectConfirmarPresenca() {
+      window.location.href = "https://wa.me/5551981216698?text=Ola+Grazi+Gostaria+de+confirmar+a+minha+presença+no+casamento+da+Claudia+e+Bruno";
+    }
+    function redirectComoChegar() {
+      window.location.href = "https://sites.wedy.com/brunoeclaudia/casamento";
+    }
+    function redirectDeixarRecado() {
+      window.location.href = "https://sites.wedy.com/brunoeclaudia/mural-de-recados";
+    }
+  </script>
 <script src="_script/all.js"></script>

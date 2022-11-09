@@ -1,101 +1,107 @@
 @charset "utf-8";
 /* ESTILIZAÇÃO PADRÃO DA PÁGINA */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gotham', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gotham", sans-serif;
 }
 html,
 body {
-    width: 100%;
-    height: 100%;
-    font-family: sans-serif;
-    font-weight: bold;
-    background-color: #F5FFF5;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  font-weight: bold;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../_img/teste3.jpeg");
+  background-position: center;
+  background-size: cover;
 }
+:root {
+    --corPrincipal: white;
+    --corSecundaria: #b5c5b8;
+  }
 
 /* ESTILIZAÇÃO DA IMAGEM PRINCIPAL */
 figure.imagemPrincipal {
-    padding: 5%;
+  padding: 5%;
 }
 figure.imagemPrincipal img {
-    background-color: #ddd;
-    border-radius: 50%;
-    height: 240px;
-    object-fit: cover;
-    width: 240px;  
-    display: block;
-    margin: auto;
-    border: 4px solid white;
-    box-shadow: 1px 1px 10px black;
-    position: relative;
+  background-color: #ddd;
+  border-radius: 50%;
+  height: 240px;
+  object-fit: cover;
+  width: 240px;
+  display: block;
+  margin: auto;
+  border: 4px solid white;
+  box-shadow: 0 0 20px black;
+  position: relative;
 }
 
 /* ESTILIZAÇÃO DO BOTÃO */
 .btn {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    border: 2px solid #5B7553;
-    border-radius: 0.6em;
-    color: #5B7553;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    font-size: 1rem;
-    font-weight: 400;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1;
-    padding: 1.2em 2.8em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin: 3% auto 3%;
-    border-radius: 30px;
-    width: 95%;
-    align-items: center;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--corPrincipal);
+  box-shadow: 0 0 0 20px;
+  border-radius: 0.6em;
+  color: var(--corPrincipal);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 1.2em 2.8em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 3% auto 3%;
+  border-radius: 30px;
+  width: 95%;
+  align-items: center;
+  box-shadow: 0 0 10px #000;
 }
 .icone {
-    height: 40px;
-    position: absolute;
-    padding-right: 70%;
+  height: 40px;
+  position: absolute;
+  padding-right: 75%;
 }
 /* EFEITOS DO BOTÃO */
 .btn:hover,
 .btn:focus {
-    color: #fff;
-    outline: 0;
+  color: #fff;
+  outline: 0;
 }
 .efeito {
-    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-}
-.efeito:hover {
-    box-shadow: 0 0 40px 40px #5B7553 inset;
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 /* CABEÇALHO PAGINA */
-footer#rodape{
-    position: absolute;
-    bottom: 0;
-    background-color: #5B7553;
-    color: #FFF;
-    width: 100%;
-    height: 50px;   
-    text-align: center;
-    line-height: 50px;
+footer#rodape {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--corPrincipal);
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
 }
-footer#rodape p{
-    text-align: right;
-    padding-right: 1%;
+footer#rodape p {
+  text-align: right;
+  padding-right: 1%;
+  font-size: 14pt;
 }
