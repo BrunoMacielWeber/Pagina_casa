@@ -17,9 +17,9 @@ body {
   background-size: cover;
 }
 :root {
-    --corPrincipal: white;
-    --corSecundaria: #b5c5b8;
-  }
+  --corPrincipal: white;
+  --corSecundaria: #b5c5b8;
+}
 
 /* ESTILIZAÇÃO DA IMAGEM PRINCIPAL */
 figure.imagemPrincipal {
@@ -39,6 +39,9 @@ figure.imagemPrincipal img {
 }
 
 /* ESTILIZAÇÃO DO BOTÃO */
+.botoes {
+  padding: 10% 0;
+}
 .btn {
   box-sizing: border-box;
   -webkit-appearance: none;
@@ -91,10 +94,10 @@ figure.imagemPrincipal img {
 
 /* CABEÇALHO PAGINA */
 footer#rodape {
-  position: sticky;
+  position: fixed;
   bottom: 0;
-  background-color: var(--corPrincipal);
-  color: #fff;
+  background-color: rgba(181, 197, 184, 0.3);
+  color: var(--corPrincipal);
   width: 100%;
   height: 40px;
   text-align: center;
