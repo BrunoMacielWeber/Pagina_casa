@@ -41,7 +41,7 @@ figure.imagemPrincipal img {
 
 /* ESTILIZAÇÃO DO BOTÃO */
 .botoes {
-  padding: 10% 0;
+  padding: 10% 0 20%;
 }
 .btn {
   box-sizing: border-box;
